@@ -1,0 +1,49 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+
+@font-face {
+  font-family: 'Heading1';
+  src: url('./assets/fonts/Roboto-Bold.ttf') format('ttf');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Heading2';
+  src: url('./assets/fonts/Roboto-Medium.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Text';
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Paragraph';
+  src: url('./assets/fonts/Roboto-Light.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TextItalic';
+  src: url('./assets/fonts/Roboto-Italic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 35px;
+  color: #ffffff;
+  opacity: 100;
+ 
+
+}
+.slick-prev, .slick-next {
+  width: 40px;
+  height: 20px;
+ z-index: 40;
+}
