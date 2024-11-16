@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import SliderImg1 from "../assets/HeroSliderImg/Img2.webp";
 import SliderImg2 from "../assets/HeroSliderImg/Img1.webp";
-import SliderImg3 from "../assets/HeroSliderImg/Img3.webp";
+import SliderImg3 from "../assets/HeroSliderImg/img3.webp";
 import SliderImg4 from "../assets/HeroSliderImg/Img4.webp";
 
 function HeroSlider() {
