@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Img1 from "../assets/HeroSliderImg/Img2.webp";
 import Img2 from "../assets/HeroSliderImg/Img1.webp";
 import Img3 from "../assets/HeroSliderImg/img3.webp";
-import Img4 from "../assets/HeroSliderImg/Img4.webp";
+import Img4 from "../assets/HeroSliderImg/Img2.webp";
 
 function HeroSlider() {
   const settings = {
