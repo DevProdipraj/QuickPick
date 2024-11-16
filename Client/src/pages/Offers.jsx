@@ -17,7 +17,7 @@ const Offers = () => {
 
   return (
     <div className="bg-primary dark:bg-dark">
-      <div className="container py-5">
+      <div className="container py-5  ">
         {isLoading && <p>Loading offers...</p>}
         {isError && <p>Failed to load offers.</p>}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-8">

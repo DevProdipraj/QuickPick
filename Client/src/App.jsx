@@ -8,6 +8,9 @@ import { Page404 } from "./pages/Page404";
 import { Offers } from "./pages/Offers";
 import NewProduct from "./pages/NewProduct";
 import ShoppingCart from "./pages/ShoppingCart";
+import Login from "./pages/Login";
+
+import Registration from "./pages/Registration";
 
 function App() {
   return (
@@ -20,6 +23,8 @@ function App() {
           <Route path="/offers" element={<Offers />}></Route>
           <Route path="/shop" element={<Shop />}></Route>
           <Route path="/shoppingCart" element={<ShoppingCart />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/registration" element={<Registration />}></Route>
           <Route path="*" element={<Page404 />}></Route>
         </Routes>
         <Footer />

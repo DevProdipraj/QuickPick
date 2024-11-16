@@ -27,13 +27,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 text-white transition-transform duration-500 ease-in-out ${
+      className={`fixed top-0 text-white transition-transform duration-500 ease-in-out shadow-md  ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       } ${scrollPosition > 50 ? "bg-red-500" : "bg-blue-500"} z-50 w-full`}
     >
       <div className="bg-primary dark:bg-dark text-text">
         {/* Top Navbar */}
-        <div className="container flex items-center justify-end md:justify-between py-2 md:py-3">
+        <div className="container flex items-center   justify-between py-2 md:py-3">
           <div className="hidden md:flex items-center">
             <FaPhone />
             <h3 className="text-sm font-textItalic ms-2 hover:underline">
@@ -43,6 +43,9 @@ const Navbar = () => {
           <p className="hidden md:block font-paragraph">
             Welcome to our market
           </p>
+          <Link className="sm:hidden  first-letter:" to="/">
+            <img src={BrandImg} alt="Logo" className="   max-w-36 me-2" />
+          </Link>
           <div className="flex items-center">
             <DarkMode />
             <select className="bg-primary cursor-pointer dark:bg-dark border-0 focus:ring-0">
@@ -62,7 +65,7 @@ const Navbar = () => {
             <img
               src={BrandImg}
               alt="Logo"
-              className="hidden md:block max-w-48"
+              className="hidden sm:block max-w-48 me-2"
             />
           </Link>
           <div className="flex-1 relative">

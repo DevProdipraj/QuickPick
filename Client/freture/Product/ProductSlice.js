@@ -39,7 +39,18 @@ const productSlice = createSlice({
       state.totalPrice += newItem.price;
       state.totalQuantity++;
     },
+
+    removeFromCart(state, action) {
+      const id = action.payload;
+      const findItem = state.products.find((item) => item.id === id);
+      if (findItem) {
+        state.totalPrice -= findItem.totalPrice;
+        state.totalQuantity -= findItem.Quantity;
+        state.products = state.products.filter((item) => item.id !== id);
+      }
+    },
   },
+
   extraReducers: (builder) => {
     builder.addCase(fetchProduct.pending, (state) => {
       state.isLoading = true;
@@ -57,5 +68,5 @@ const productSlice = createSlice({
   },
 });
 
-export const { addToCard } = productSlice.actions;
+export const { addToCard, removeFromCart } = productSlice.actions;
 export default productSlice.reducer;
